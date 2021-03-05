@@ -10,7 +10,7 @@
 *			 Created a new user
 *********************************************************************************/
 
-
+--This note is to verify that desktop is pushing to Github online
 --Create disk_inventoryBM database
 
 use master;
