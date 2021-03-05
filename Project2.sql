@@ -24,6 +24,8 @@ go
 
 --Create login and user for diskUserBM with read permissions
 
+use disk_inventoryBM
+
 if SUSER_ID('diskUserBM') is null
 	create login diskUserBM
 	with password = 'Pa$$w0rd',
