@@ -341,7 +341,7 @@ INSERT INTO [dbo].[Borrowers]
            ,'9501627384'),
 		   ('Tamara Tell'
            ,'5016273849'),
-		   ('Del eteme'
+		   ('Del Eteme'
 		   ,'2088675309')
 GO
 
@@ -581,5 +581,3 @@ GO
 select Borrower_ID, Media_ID, Loan_out_date, Loan_in_date
 from Loans
 where Loan_in_date is null;
-
-select * from Media_Inventory;
