@@ -280,8 +280,36 @@ INSERT INTO [dbo].[Media_Inventory]
            ,'Warped Tour 2007'
            ,1
            ,'06-05-2007'
+           ,'Available'),
+		   ('Bluray'
+           ,'Suspense'
+           ,'Se7en'
+           ,1
+           ,'09-22-1995'
            ,'Available')
 GO
+
+USE [disk_inventoryBM]
+GO
+
+--Missed disk for Project 2 (In Media_Inventory, but not Media_Types)
+--INSERT INTO [dbo].[Media_Inventory]
+--           ([Media_format]
+--           ,[Media_genre]
+--           ,[Media_name]
+--           ,[Media_qty]
+--           ,[Media_release_date]
+--           ,[Media_status])
+--     VALUES
+--           ('Bluray'
+--           ,'Suspense'
+--           ,'Se7en'
+--           ,1
+--           ,'09-22-1995'
+--           ,'Available')
+--GO
+
+
 
 UPDATE [dbo].[Media_Inventory]
    SET [Media_genre] = 'Hard Rock'
@@ -289,7 +317,7 @@ UPDATE [dbo].[Media_Inventory]
 GO
 
 --Use this to troubshoot entries
---select * from Media_Inventory;
+--use disk_inventoryBM select * from Media_Inventory;
 
 --DELETE FROM [dbo].[Media_Inventory]
 --      WHERE  Media_type = 'CD'
