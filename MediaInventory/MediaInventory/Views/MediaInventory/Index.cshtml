@@ -1,0 +1,29 @@
+﻿@model List<MediaInventory>
+@{
+    ViewData["Title"] = "Artist Page";
+}
+
+<div>
+    <h1>Artists</h1>
+</div>
+<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr><th>Media ID</th><th>Format</th><th>Media Name</th><th>Genre</th><th>Release Date</th><th>Quantity</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var MediaInventory in Model)
+            {
+            <tr>
+                <td>@MediaInventory.MediaId</td>
+                <td>@MediaInventory.MediaFormat</td>
+                <td>@MediaInventory.MediaName</td>
+                <td>@MediaInventory.MediaGenre</td>
+                <td>@MediaInventory.MediaReleaseDate</td>
+                <td>@MediaInventory.MediaQty</td>
+                <td>@MediaInventory.MediaStatus</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
